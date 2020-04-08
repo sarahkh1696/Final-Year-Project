@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="QTPharmacyMasterPage.master.cs" Inherits="QTPharmacyMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head id="Head1" runat="server">
+        <title>QT Pharmacy Management System</title>
+        <link href="QTPharmacy.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            
+
+            .newStyle1 {
+                font-family: calibri;
+                font-size: medium;
+                font-weight: bold;
+                font-style: normal;
+                text-transform: capitalize;
+                color: #800080;
+                text-decoration: underline;
+            }
+            .newStyle2 {
+                font-family: calibri;
+            }
+            .newStyle3 {
+                font-family: calibri;
+            }
+            .auto-style1 {
+                left: 0%;
+                top: 92%;
+            }
+            .auto-style2 {
+                left: 0%;
+                top: 12%;
+                width: 21%;
+                height: 69%;
+            }
+            .newStyle4 {
+                font-family: calibri;
+            }
+            .newStyle5 {
+                font-family: calibri;
+            }
+            .auto-style3 {
+                font-family: calibri;
+                font-size: medium;
+                font-weight: bold;
+                font-style: normal;
+                text-transform: capitalize;
+                color: #800080;
+                text-decoration: underline;
+                text-align: center;
+            }
+            .auto-style4 {
+                font-size: x-large;
+            }
+            .newStyle6 {
+                color: #808080;
+                font-family: calibri;
+            }
+            .newStyle7 {
+                font-family: calibri;
+            }
+            .newStyle8 {
+                color: #000000;
+            }
+            .newStyle9 {
+                font-family: calibri;
+            }
+            .newStyle10 {
+                font-family: calibri;
+            }
+            .newStyle11 {
+                font-family: calibri;
+                color: #000000;
+            }
+            .newStyle12 {
+                font-family: calibri;
+                color: #000000;
+            }
+            .newStyle13 {
+                font-family: calibri;
+                color: #000000;
+            }
+            .auto-style5 {
+                left: 21%;
+                top: 13%;
+            }
+            .auto-style7 {
+                margin-left: 38px;
+                margin-top: 60px;
+                margin-right: 6px;
+            }
+            .auto-style8 {
+                margin-left: 29px;
+            }
+            .auto-style9 {
+                margin-left: 23px;
+            }
+            .auto-style10 {
+                margin-left: 24px;
+                margin-top: 44px;
+                margin-right: 0px;
+            }
+            .auto-style11 {
+                margin-left: 33px;
+                margin-top: 0px;
+            }
+            .auto-style12 {
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+ 
+             <header class="auto-style3">
+                 <span class="auto-style4">QT Pharmacy Management System
+                </span>
+                <br />
+               
+            </header>
+ 
+            <nav class="auto-style2">
+                <span class="newStyle2">
+                <br />
+                </span>
+                <span class="newStyle6">
+                <br />
+                </span>
+                <asp:LinkButton ID="LinkButton3" runat="server" CssClass="newStyle13">Log In</asp:LinkButton>
+                <span class="newStyle6">
+                <br />
+                <br />
+                </span>
+                <asp:LinkButton ID="LinkButton4" runat="server" CssClass="newStyle12">Sign Up</asp:LinkButton>
+                <span class="newStyle6">
+                <br />
+                <br />
+                </span>
+                <asp:LinkButton ID="LinkButton5" runat="server" CssClass="newStyle11">Re-Set Password</asp:LinkButton>
+                <br />
+                <br />
+                
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                
+            </nav>
+ 
+            <footer class="auto-style1">
+                <span class="newStyle7">&nbsp;&nbsp;&nbsp;Footer text here</span>
+            </footer>
+ 
+            <br />
+            <article class="auto-style5">
+                
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    <p>
+                        <br />
+                    </p>
+                    <p>
+    <asp:Image ID="Image1" runat="server" Height="130px" Width="144px" CssClass="auto-style8" />&nbsp;&nbsp;&nbsp;
+    <asp:Image ID="Image2" runat="server" Height="130px" Width="144px" />&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Image ID="Image3" runat="server" Height="130px" Width="144px" />&nbsp;&nbsp;&nbsp;&nbsp; <asp:Image ID="Image4" runat="server" Height="130px" Width="144px" />&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Image ID="Image5" runat="server" Height="130px" Width="144px" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                   
+    <asp:Button ID="btnPatients" runat="server" Text="Patients" Height="36px" Width="126px" CssClass="auto-style9" OnClick="btnPatients_Click" />
+    <asp:Button ID="btnDrugs" runat="server" Text=" Drugs" CssClass="auto-style10" Height="35px" OnClick="btnDrugs_Click" Width="138px" />
+    <asp:Button ID="btnConsultants" runat="server" Text="Consultants" CssClass="auto-style11" Height="35px" Width="144px" OnClick="btnConsultants_Click" />
+    <asp:Button ID="btnOrders" runat="server" Text="Orders" CssClass="auto-style7" Height="32px" Width="146px" OnClick="btnOrders_Click" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnPayments" runat="server" CssClass="auto-style12" OnClick="btnPayments_Click" Text="Payments" Width="136px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+    
+                </asp:ContentPlaceHolder>
+            </article>
+ 
+        </form>
+    </body>
+</html>
